@@ -12,7 +12,7 @@ import (
 
 const (
 	appVersionStr = "v0.1"
-	nameOfService = "template-service"
+	nameOfService = "http-status"
 )
 
 var (
@@ -72,5 +72,5 @@ func main() {
 }
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "<html><body>We are up and running "+nameOfService+" on port "+settings.Port+" ;)</body></html>")
+	fmt.Fprint(w, "<html><body>We are up and running "+nameOfService+" ;)</body></html>")
 }
